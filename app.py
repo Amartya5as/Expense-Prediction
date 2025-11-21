@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import joblib
 import nltk
-nltk.download('punkt', quiet=True)
-nltk.download('stopwords', quiet=True)
+nltk.download('punkt')
+nltk.download('stopwords')
 
 model = joblib.load("expense_classifier_pipeline.pkl")
 
